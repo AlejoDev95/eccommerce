@@ -6,6 +6,12 @@
     "module": "ESNext",
     "skipLibCheck": true,
     "esModuleInterop": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@data/*": ["./data/*"],
+      "@models/*": ["./models/*"],
+      "@redux/*": ["./redux/*"],
+    },
 
     /* Bundler mode */
     "moduleResolution": "bundler",
