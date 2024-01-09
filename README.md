@@ -1,30 +1,36 @@
-# React + TypeScript + Vite
+# Ecommerce
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## instructions for running the app and tests
 
-Currently, two official plugins are available:
+To run the project, we need to have the following tools
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Node in its lts version 18.17.1.
+- git version 2.25.1.
+- It is recommended to use yarn in its version 1.22.19 to download dependencies.
 
-## Expanding the ESLint configuration
+Next, we need to download the project from the following repository [Ecommerce repository](https://github.com/AlejoDev95/eccommerce).
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+After downloading, we access it from Visual Studio and install dependencies with the following command.
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```sh
+yarn install
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+After installing the dependencies, if we want to run the project, we need to execute the following command and access the route <http://localhost:5173>
+
+```sh
+yarn run dev
+```
+
+But if we want to run the tests, we need to execute one of the following commands.
+
+```sh
+yarn run test // Execute tests without coverage report
+yarn run test:coverage Execute tests with coverage report
+```
+
+The application was published on AWS and can be accessed through the following [link-ecommerce-react.s3](http://alejodev-ecommerce-react.s3-website.us-east-2.amazonaws.com)
+
+## Coverage report
+
+![Coverage report](./public/coverage_report.png)
