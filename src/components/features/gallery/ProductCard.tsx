@@ -1,5 +1,5 @@
 import { ImageLoader } from "@components/common";
-import { Product } from "@models/product.model";
+import type { Product } from "@models/product.model";
 import { useAppDispatch } from "@redux/hooks";
 import { addProductToListOfSelectedProduct } from "@redux/slices/checkout";
 import { FC } from "react";

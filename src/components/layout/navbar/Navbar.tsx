@@ -1,11 +1,11 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import { MdOutlineShoppingCart } from "react-icons/md";
-import { IconContainer } from "../common/IconContainer";
-import { Overlay } from "./Overlay";
 import { useEffect, useState } from "react";
+import { MdOutlineShoppingCart } from "react-icons/md";
 import { useAppSelector } from "@redux/hooks";
 import { RootState } from "@redux/store";
+import { IconContainer } from "@components/common";
 import { BadgeCard } from "./BadgeCard";
+import { Overlay } from "../overlay/Overlay";
 
 export const Navbar = () => {
   const [overlayOpen, setOverlayOpen] = useState(true);

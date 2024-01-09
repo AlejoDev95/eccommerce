@@ -1,4 +1,4 @@
-import { Product } from '../models';
+import type { Product } from "@models/product.model";
 
 const generateRandomPrice = (
   min: number,

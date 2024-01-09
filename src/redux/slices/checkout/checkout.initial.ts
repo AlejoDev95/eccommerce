@@ -3,7 +3,7 @@ import {
   PaymentSummary,
   Product,
   TransactionResult,
-} from '../../../models';
+} from '@models/index';
 
 interface CheckoutSlice {
   listOfProducts: Product[];

@@ -1,8 +1,8 @@
 import { createSlice } from '@reduxjs/toolkit';
 import type { PayloadAction } from '@reduxjs/toolkit';
+import type { Product } from '@models/product.model';
+import { listOfFakeProducts } from '@data/index';
 import { checkoutInitialState } from './checkout.initial';
-import { Product } from '../../../models';
-import { listOfFakeProducts } from '../../../data';
 
 export const checkoutSlice = createSlice({
   name: 'checkout',
@@ -18,10 +18,10 @@ export const checkoutSlice = createSlice({
       const productIndex = state.listOfSelectedProducts.findIndex(
         ({ id }) => id === action.payload.id
       );
-      if(productIndex === -1) {
-        state.listOfSelectedProducts.push({...action.payload, amount: 1});
+      if (productIndex === -1) {
+        state.listOfSelectedProducts.push({ ...action.payload, amount: 1 });
       } else {
-        state.listOfSelectedProducts[productIndex].amount++
+        state.listOfSelectedProducts[productIndex].amount++;
       }
     },
     deleteProductToListOfSelectedProduct: (

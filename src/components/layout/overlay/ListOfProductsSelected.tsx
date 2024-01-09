@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { Product } from "@models/product.model";
+import type { Product } from "@models/product.model";
 import { ProductSelected } from "./ProductSelected";
 
 type ListOfProductsSelectedProps = {

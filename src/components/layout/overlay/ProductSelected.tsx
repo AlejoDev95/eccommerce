@@ -1,9 +1,9 @@
-import { IconContainer, ImageLoader } from "@components/common";
-import { Product } from "@models/product.model";
-import { useAppDispatch } from "@redux/hooks";
-import { deleteProductToListOfSelectedProduct } from "@redux/slices/checkout";
 import { FC } from "react";
 import { MdDelete } from "react-icons/md";
+import { useAppDispatch } from "@redux/hooks";
+import { deleteProductToListOfSelectedProduct } from "@redux/slices/checkout";
+import type { Product } from "@models/product.model";
+import { IconContainer, ImageLoader } from "@components/common";
 
 type ProductSelectedProps = {
   product: Product;
