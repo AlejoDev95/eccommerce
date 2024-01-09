@@ -20,6 +20,7 @@ const generarUUID = (): string => {
 export const listOfFakeProducts: Product[] = [
   {
     id: generarUUID(),
+    amount: 0,
     price: generateRandomPrice(10, 200),
     name: 'product',
     description:
@@ -28,6 +29,7 @@ export const listOfFakeProducts: Product[] = [
   },
   {
     id: generarUUID(),
+    amount: 0,
     price: generateRandomPrice(10, 200),
     name: 'product',
     description:
@@ -37,6 +39,7 @@ export const listOfFakeProducts: Product[] = [
   },
   {
     id: generarUUID(),
+    amount: 0,
     price: generateRandomPrice(10, 200),
     name: 'product',
     description:
@@ -46,6 +49,7 @@ export const listOfFakeProducts: Product[] = [
   },
   {
     id: generarUUID(),
+    amount: 0,
     price: generateRandomPrice(10, 200),
     name: 'product',
     description:
@@ -55,6 +59,7 @@ export const listOfFakeProducts: Product[] = [
   },
   {
     id: generarUUID(),
+    amount: 0,
     price: generateRandomPrice(10, 200),
     name: 'product',
     description:
@@ -64,6 +69,7 @@ export const listOfFakeProducts: Product[] = [
   },
   {
     id: generarUUID(),
+    amount: 0,
     price: generateRandomPrice(10, 200),
     name: 'product',
     description:
@@ -73,6 +79,7 @@ export const listOfFakeProducts: Product[] = [
   },
   {
     id: generarUUID(),
+    amount: 0,
     price: generateRandomPrice(10, 200),
     name: 'product',
     description:
@@ -82,6 +89,7 @@ export const listOfFakeProducts: Product[] = [
   },
   {
     id: generarUUID(),
+    amount: 0,
     price: generateRandomPrice(10, 200),
     name: 'product',
     description:
@@ -91,6 +99,7 @@ export const listOfFakeProducts: Product[] = [
   },
   {
     id: generarUUID(),
+    amount: 0,
     price: generateRandomPrice(10, 200),
     name: 'product',
     description:
@@ -100,6 +109,7 @@ export const listOfFakeProducts: Product[] = [
   },
   {
     id: generarUUID(),
+    amount: 0,
     price: generateRandomPrice(10, 200),
     name: 'product',
     description:
@@ -109,6 +119,7 @@ export const listOfFakeProducts: Product[] = [
   },
   {
     id: generarUUID(),
+    amount: 0,
     price: generateRandomPrice(10, 200),
     name: 'product',
     description:
@@ -118,6 +129,7 @@ export const listOfFakeProducts: Product[] = [
   },
   {
     id: generarUUID(),
+    amount: 0,
     price: generateRandomPrice(10, 200),
     name: 'product',
     description:
