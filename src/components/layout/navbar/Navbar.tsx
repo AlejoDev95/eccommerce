@@ -15,6 +15,7 @@ export const Navbar = () => {
   const toggleOverlay = () => {
     setOverlayOpen((value) => !value);
   };
+
   useEffect(() => {
     if (listOfSelectedProducts.length === 0) {
       setOverlayOpen(false);

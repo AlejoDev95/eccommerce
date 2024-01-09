@@ -6,12 +6,12 @@ import { NotProductMessage } from "./NotProductMessage";
 import { ListOfProductsSelected } from "./ListOfProductsSelected";
 import { toggleVisibilityModal } from "@redux/slices/checkout";
 
-type Overlay = {
+type OverlayPops = {
   overlayOpen: boolean;
   setOverlayOpen: (value: boolean) => void;
 };
 
-export const Overlay: FC<Overlay> = ({ overlayOpen, setOverlayOpen }) => {
+export const Overlay: FC<OverlayPops> = ({ overlayOpen, setOverlayOpen }) => {
   const { listOfSelectedProducts } = useAppSelector(
     (state: RootState) => state.checkout
   );

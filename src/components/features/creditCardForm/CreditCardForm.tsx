@@ -86,7 +86,7 @@ export const CreditCardForm = () => {
             render={({ message }) => {
               return (
                 message && (
-                  <span className="text-red-900 font-medium text-sm">
+                  <span role="alert" className="text-red-900 font-medium text-sm">
                     {message}
                   </span>
                 )
@@ -126,7 +126,7 @@ export const CreditCardForm = () => {
             render={({ message }) => {
               return (
                 message && (
-                  <span className="text-red-900 font-medium text-sm">
+                  <span role="alert" className="text-red-900 font-medium text-sm">
                     {message}
                   </span>
                 )
@@ -154,7 +154,7 @@ export const CreditCardForm = () => {
               render={({ message }) => {
                 return (
                   message && (
-                    <span className="text-red-900 font-medium text-sm">
+                    <span role="alert" className="text-red-900 font-medium text-sm">
                       {message}
                     </span>
                   )
@@ -181,7 +181,7 @@ export const CreditCardForm = () => {
               render={({ message }) => {
                 return (
                   message && (
-                    <span className="text-red-900 font-medium text-sm">
+                    <span role="alert" className="text-red-900 font-medium text-sm">
                       {message}
                     </span>
                   )
