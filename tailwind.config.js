@@ -9,6 +9,7 @@ export default {
         primary: "#3498db",
         secondary: "#2ecc71",
         accent: "#e74c3c",
+        accent_hover: "#ea6253",
         background: "#ecf0f1",
         text: "#34495e",
         success: "#27ae60",
