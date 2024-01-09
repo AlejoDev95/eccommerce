@@ -7,13 +7,13 @@ import { BadgeCard } from "./BadgeCard";
 import { Overlay } from "../overlay/Overlay";
 
 export const Navbar = () => {
-  const [overlayOpen, setOverlayOpen] = useState(true);
+  const [overlayOpen, setOverlayOpen] = useState(false);
   const { listOfSelectedProducts } = useAppSelector(
     (state: RootState) => state.checkout
   );
 
   const toggleOverlay = () => {
-    setOverlayOpen(!overlayOpen);
+    setOverlayOpen((value) => !value);
   };
   useEffect(() => {
     if (listOfSelectedProducts.length === 0) {
