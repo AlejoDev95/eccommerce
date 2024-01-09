@@ -28,4 +28,8 @@ export const checkoutSlice = createSlice({
   },
 });
 
-export const { addProductToListOfSelectedProduct } = checkoutSlice.actions;
+export const {
+  addProductToListOfSelectedProduct,
+  loadListOfProducts,
+  deleteProductToListOfSelectedProduct,
+} = checkoutSlice.actions;
