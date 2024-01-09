@@ -1,7 +1,18 @@
 {
+  "moduleNameMapper": {
+    "^@data/(.*)$": "<rootDir>/src/data/$1",
+    "^@models/(.*)$": "<rootDir>/src/models/$1",
+    "^@redux/(.*)$": "<rootDir>/src/redux/$1",
+    "^@components/(.*)$": "<rootDir>/src/components/$1",
+    "^@utils/(.*)$": "<rootDir>/src/utils/$1",
+    "^@regex/(.*)$": "<rootDir>/src/regex/$1",
+    "^@/(.*)$": "<rootDir>/src/$1"
+  },
   "testEnvironment": "jsdom",
   "transform": {
     "^.+\\.tsx?$": "ts-jest"
   },
-  "setupFilesAfterEnv": ["@testing-library/jest-dom"]
+  "setupFilesAfterEnv": [
+    "@testing-library/jest-dom"
+  ]
 }
