@@ -1,18 +1,27 @@
 import { FC } from "react";
 import { RootState } from "@redux/store";
-import { useAppSelector } from "@redux/hooks";
+import { useAppDispatch, useAppSelector } from "@redux/hooks";
 import classNames from "classnames";
 import { NotProductMessage } from "./NotProductMessage";
 import { ListOfProductsSelected } from "./ListOfProductsSelected";
+import { toggleVisibilityModal } from "@redux/slices/checkout";
 
 type Overlay = {
   overlayOpen: boolean;
+  setOverlayOpen: (value: boolean) => void;
 };
 
-export const Overlay: FC<Overlay> = ({ overlayOpen }) => {
+export const Overlay: FC<Overlay> = ({ overlayOpen, setOverlayOpen }) => {
   const { listOfSelectedProducts } = useAppSelector(
     (state: RootState) => state.checkout
   );
+
+  const dispatch = useAppDispatch();
+
+  const handleOpenModal = () => {
+    dispatch(toggleVisibilityModal(true));
+    setOverlayOpen(false);
+  };
 
   const overlayClasses = classNames({ hidden: !overlayOpen });
 
@@ -27,7 +36,10 @@ export const Overlay: FC<Overlay> = ({ overlayOpen }) => {
             listOfSelectedProducts={listOfSelectedProducts}
           />
           <div className="pt-4 px-2">
-            <button className="w-full text-white bg-accent py-1.5 rounded-md font-medium hover:bg-accent_hover transition-colors">
+            <button
+              onClick={handleOpenModal}
+              className="w-full text-white bg-accent py-1.5 rounded-md font-medium hover:bg-accent_hover transition-colors"
+            >
               Pay
             </button>
           </div>

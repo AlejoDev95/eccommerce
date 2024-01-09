@@ -6,17 +6,18 @@ import {
 } from '@models/index';
 
 interface CheckoutSlice {
+  isOpenModal: boolean
   listOfProducts: Product[];
   listOfSelectedProducts: Product[];
   creditCardInfo: CreditCardInfo;
   paymentSummary: PaymentSummary;
   transactionResult: TransactionResult;
-  error: string | null;
 }
 
 export const checkoutInitialState: CheckoutSlice = {
   listOfProducts: [],
   listOfSelectedProducts: [],
+  isOpenModal: false,
   creditCardInfo: {
     userName: '',
     cardNumber: '',
@@ -28,7 +29,6 @@ export const checkoutInitialState: CheckoutSlice = {
   },
   transactionResult: {
     success: false,
-    message: '',
+    message: null,
   },
-  error: null,
 };
