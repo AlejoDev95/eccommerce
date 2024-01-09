@@ -1,34 +1,18 @@
-import {
-  CreditCardInfo,
-  PaymentSummary,
-  Product,
-  TransactionResult,
-} from '@models/index';
+import { Product, TransactionResult } from '@models/index';
 
 interface CheckoutSlice {
+  isOpenModal: boolean;
   listOfProducts: Product[];
   listOfSelectedProducts: Product[];
-  creditCardInfo: CreditCardInfo;
-  paymentSummary: PaymentSummary;
   transactionResult: TransactionResult;
-  error: string | null;
 }
 
 export const checkoutInitialState: CheckoutSlice = {
   listOfProducts: [],
   listOfSelectedProducts: [],
-  creditCardInfo: {
-    userName: '',
-    cardNumber: '',
-    expirationDate: '',
-    cvv: '',
-  },
-  paymentSummary: {
-    totalPrice: 0,
-  },
+  isOpenModal: false,
   transactionResult: {
     success: false,
-    message: '',
+    message: null,
   },
-  error: null,
 };

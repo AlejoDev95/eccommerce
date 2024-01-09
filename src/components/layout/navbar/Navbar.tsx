@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from "react";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { useAppSelector } from "@redux/hooks";
@@ -8,18 +7,17 @@ import { BadgeCard } from "./BadgeCard";
 import { Overlay } from "../overlay/Overlay";
 
 export const Navbar = () => {
-  const [overlayOpen, setOverlayOpen] = useState(true);
+  const [overlayOpen, setOverlayOpen] = useState(false);
   const { listOfSelectedProducts } = useAppSelector(
     (state: RootState) => state.checkout
   );
 
   const toggleOverlay = () => {
-    setOverlayOpen(!overlayOpen);
+    setOverlayOpen((value) => !value);
   };
-
   useEffect(() => {
     if (listOfSelectedProducts.length === 0) {
-      toggleOverlay();
+      setOverlayOpen(false);
     }
   }, [listOfSelectedProducts]);
 
@@ -49,7 +47,7 @@ export const Navbar = () => {
           </div>
         </button>
 
-        <Overlay overlayOpen={overlayOpen} />
+        <Overlay setOverlayOpen={setOverlayOpen} overlayOpen={overlayOpen} />
       </div>
     </nav>
   );

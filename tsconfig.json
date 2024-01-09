@@ -12,6 +12,8 @@
       "@models/*": ["./models/*"],
       "@redux/*": ["./redux/*"],
       "@components/*": ["./components/*"],
+      "@utils/*": ["./utils/*"],
+      "@regex/*": ["./regex/*"],
     },
 
     /* Bundler mode */

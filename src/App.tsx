@@ -1,4 +1,6 @@
+import { ToastProduct } from "@components/common/toast";
 import { Gallery } from "@components/features";
+import { ModalPurchase  } from "@components/features/modal";
 import { Navbar } from "@components/layout";
 
 export const App = () => {
@@ -6,6 +8,8 @@ export const App = () => {
     <>
       <Navbar />
       <Gallery />
+      <ModalPurchase  />
+      <ToastProduct />
     </>
   );
 };

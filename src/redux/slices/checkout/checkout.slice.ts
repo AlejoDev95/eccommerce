@@ -32,11 +32,34 @@ export const checkoutSlice = createSlice({
         (product) => product.id !== action.payload.id
       );
     },
+    toggleVisibilityModal: (state, action) => {
+      state.isOpenModal = action.payload;
+    },
+    completeTransaction: (state) => {
+      return { ...checkoutInitialState, listOfProducts: state.listOfProducts };
+    },
+    errorTransaction: (state) => {
+      state.transactionResult.message = 'Error inesperado, por favor inténtalo más tarde';
+      state.transactionResult.success = false;
+    },
+
+    successTransaction: (state) => {
+      state.transactionResult.message = 'Gracias por tu compra';
+      state.transactionResult.success = true;
+    },
+    resetTransactionData:(state) => {
+      state.transactionResult = checkoutInitialState.transactionResult
+    },
   },
 });
 
 export const {
   addProductToListOfSelectedProduct,
-  loadListOfProducts,
+  completeTransaction,
   deleteProductToListOfSelectedProduct,
+  errorTransaction,
+  loadListOfProducts,
+  successTransaction,
+  toggleVisibilityModal,
+  resetTransactionData
 } = checkoutSlice.actions;

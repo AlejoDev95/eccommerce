@@ -22,7 +22,7 @@ export const listOfFakeProducts: Product[] = [
     id: generarUUID(),
     amount: 0,
     price: generateRandomPrice(10, 200),
-    name: 'product',
+    name: 'Organic Products',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, similique ad. Atque dignissimos dicta modi molestias vel quasi architecto, molestiae accusamus cupiditate est, officiis quidem voluptatem exercitationem iste ad neque?',
     urlImage: 'https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg',
@@ -31,7 +31,7 @@ export const listOfFakeProducts: Product[] = [
     id: generarUUID(),
     amount: 0,
     price: generateRandomPrice(10, 200),
-    name: 'product',
+    name: 'Shoes',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, similique ad. Atque dignissimos dicta modi molestias vel quasi architecto, molestiae accusamus cupiditate est, officiis quidem voluptatem exercitationem iste ad neque?',
     urlImage:
@@ -41,7 +41,7 @@ export const listOfFakeProducts: Product[] = [
     id: generarUUID(),
     amount: 0,
     price: generateRandomPrice(10, 200),
-    name: 'product',
+    name: 'Bag',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, similique ad. Atque dignissimos dicta modi molestias vel quasi architecto, molestiae accusamus cupiditate est, officiis quidem voluptatem exercitationem iste ad neque?',
     urlImage:
@@ -51,7 +51,7 @@ export const listOfFakeProducts: Product[] = [
     id: generarUUID(),
     amount: 0,
     price: generateRandomPrice(10, 200),
-    name: 'product',
+    name: 'Pots',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, similique ad. Atque dignissimos dicta modi molestias vel quasi architecto, molestiae accusamus cupiditate est, officiis quidem voluptatem exercitationem iste ad neque?',
     urlImage:
@@ -61,7 +61,7 @@ export const listOfFakeProducts: Product[] = [
     id: generarUUID(),
     amount: 0,
     price: generateRandomPrice(10, 200),
-    name: 'product',
+    name: 'Watch',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, similique ad. Atque dignissimos dicta modi molestias vel quasi architecto, molestiae accusamus cupiditate est, officiis quidem voluptatem exercitationem iste ad neque?',
     urlImage:
@@ -71,7 +71,7 @@ export const listOfFakeProducts: Product[] = [
     id: generarUUID(),
     amount: 0,
     price: generateRandomPrice(10, 200),
-    name: 'product',
+    name: 'Cleats',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, similique ad. Atque dignissimos dicta modi molestias vel quasi architecto, molestiae accusamus cupiditate est, officiis quidem voluptatem exercitationem iste ad neque?',
     urlImage:
@@ -81,7 +81,7 @@ export const listOfFakeProducts: Product[] = [
     id: generarUUID(),
     amount: 0,
     price: generateRandomPrice(10, 200),
-    name: 'product',
+    name: 'Hand Cream',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, similique ad. Atque dignissimos dicta modi molestias vel quasi architecto, molestiae accusamus cupiditate est, officiis quidem voluptatem exercitationem iste ad neque?',
     urlImage:
@@ -91,7 +91,7 @@ export const listOfFakeProducts: Product[] = [
     id: generarUUID(),
     amount: 0,
     price: generateRandomPrice(10, 200),
-    name: 'product',
+    name: 'Gift',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, similique ad. Atque dignissimos dicta modi molestias vel quasi architecto, molestiae accusamus cupiditate est, officiis quidem voluptatem exercitationem iste ad neque?',
     urlImage:
@@ -101,7 +101,7 @@ export const listOfFakeProducts: Product[] = [
     id: generarUUID(),
     amount: 0,
     price: generateRandomPrice(10, 200),
-    name: 'product',
+    name: 'Lamp',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, similique ad. Atque dignissimos dicta modi molestias vel quasi architecto, molestiae accusamus cupiditate est, officiis quidem voluptatem exercitationem iste ad neque?',
     urlImage:
@@ -111,7 +111,7 @@ export const listOfFakeProducts: Product[] = [
     id: generarUUID(),
     amount: 0,
     price: generateRandomPrice(10, 200),
-    name: 'product',
+    name: 'Lotion',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, similique ad. Atque dignissimos dicta modi molestias vel quasi architecto, molestiae accusamus cupiditate est, officiis quidem voluptatem exercitationem iste ad neque?',
     urlImage:
@@ -121,7 +121,7 @@ export const listOfFakeProducts: Product[] = [
     id: generarUUID(),
     amount: 0,
     price: generateRandomPrice(10, 200),
-    name: 'product',
+    name: 'Game Controller',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, similique ad. Atque dignissimos dicta modi molestias vel quasi architecto, molestiae accusamus cupiditate est, officiis quidem voluptatem exercitationem iste ad neque?',
     urlImage:
@@ -131,7 +131,7 @@ export const listOfFakeProducts: Product[] = [
     id: generarUUID(),
     amount: 0,
     price: generateRandomPrice(10, 200),
-    name: 'product',
+    name: 'Briefcase',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, similique ad. Atque dignissimos dicta modi molestias vel quasi architecto, molestiae accusamus cupiditate est, officiis quidem voluptatem exercitationem iste ad neque?',
     urlImage:
